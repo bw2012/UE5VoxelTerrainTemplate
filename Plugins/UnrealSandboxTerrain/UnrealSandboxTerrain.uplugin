@@ -11,7 +11,7 @@
 	"DocsURL": "",
 	"MarketplaceURL": "",
 	"SupportURL": "https://t.me/darklithosphere",
-	"CanContainContent": false,
+	"CanContainContent": true,
 	"IsBetaVersion": false,
 	"Installed": false,
 	"Modules": [
