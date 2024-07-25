@@ -3,6 +3,7 @@
 #include "UE5VoxelTerrainProjectile.h"
 #include "GameFramework/ProjectileMovementComponent.h"
 #include "Components/SphereComponent.h"
+#include "SandboxTerrainController.h"
 
 AUE5VoxelTerrainProjectile::AUE5VoxelTerrainProjectile() 
 {
@@ -23,7 +24,7 @@ AUE5VoxelTerrainProjectile::AUE5VoxelTerrainProjectile()
 	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT("ProjectileComp"));
 	ProjectileMovement->UpdatedComponent = CollisionComp;
 	ProjectileMovement->InitialSpeed = 3000.f;
-	ProjectileMovement->MaxSpeed = 3000.f;
+	ProjectileMovement->MaxSpeed = 3000.f;	
 	ProjectileMovement->bRotationFollowsVelocity = true;
 	ProjectileMovement->bShouldBounce = true;
 
@@ -33,6 +34,13 @@ AUE5VoxelTerrainProjectile::AUE5VoxelTerrainProjectile()
 
 void AUE5VoxelTerrainProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+	ASandboxTerrainController* TerrainController = Cast<ASandboxTerrainController>(OtherActor);
+	if (TerrainController) {
+		TerrainController->DigTerrainRoundHole(Hit.Location, 200);
+		Destroy();
+		return;
+	}
+
 	// Only add impulse and destroy projectile if we hit a physics
 	if ((OtherActor != nullptr) && (OtherActor != this) && (OtherComp != nullptr) && OtherComp->IsSimulatingPhysics())
 	{
