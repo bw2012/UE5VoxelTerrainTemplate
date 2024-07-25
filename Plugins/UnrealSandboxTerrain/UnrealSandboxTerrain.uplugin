@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "UnrealSandboxTerrain",
+	"EngineVersion": "5.4",
+	"Description": "",
+	"Category": "Other",
+	"CreatedBy": "demondark20",
+	"CreatedByURL": "https://github.com/bw2012/UnrealSandboxTerrain",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "https://t.me/darklithosphere",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UnrealSandboxTerrain",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		}
+	]
+}
