@@ -20,18 +20,17 @@ Saved
 *.db
 *.rar
 
-/Content
 .vsconfig
 /enc_temp_folder
 
 
 .ignore
 .vscode/
-DarkLithosphere.code-workspace
+*.code-workspace
 Makefile
 
 *.txt
 *.workspace
 
-UpgradeLog.htm
+*.htm
 
