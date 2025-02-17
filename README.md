@@ -12,7 +12,7 @@ Minimal working example with UE 5.4
 3. Run PIE
 
 # Links
-Big playable demo - https://drive.google.com/file/d/1s6FRtKYhyXROCsA0Ga8atbiszyskr82A/view
+Big playable demo - https://mega.nz/file/mKoSQDTD#H9zhTK-HGyCfolQuhSGCJ-jOSXfA_IlOsWVU5xPTAgU
 
 Example UE4 project (discontinued) - https://github.com/bw2012/UE4VoxelTerrain
 
