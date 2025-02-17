@@ -20,6 +20,4 @@ Example UE5 project (with grass and trees) - https://github.com/bw2012/UE5VoxelT
 
 Voxel terrain plugin - https://github.com/bw2012/UnrealSandboxTerrain
 
-# License
-MIT license
 
